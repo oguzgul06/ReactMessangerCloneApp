@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Button, FormControl, InputLabel, Input } from "@material-ui/core";
+import { FormControl, InputLabel, Input } from "@material-ui/core";
 import "./App.css";
 import Message from "./Message";
 import db from "./firebase";
 import firebase from "firebase";
 import FlipMove from "react-flip-move";
-import { width } from "@material-ui/system";
+
 import SendIcon from "@material-ui/icons/Send";
 import { IconButton } from "@material-ui/core";
 
@@ -46,8 +46,8 @@ function App() {
         src="https://www.fastindir.com/wp-content/uploads/2021/03/gfjhgjhgjhgjg.png"
         style={{ width: 250, height: 250 }}
       />
-      <h1>Hello Programmer of My Messenger Clone App🚀</h1>
-      <h2>Welcome {username}</h2>
+      <h1 style={{ color: "white" }}>Hello User My Messenger Clone App🚀</h1>
+      <h2 style={{ color: "white" }}>Welcome {username}</h2>
       <form className="app__form">
         <FormControl className="app__formControl">
           <InputLabel>Enter a message...</InputLabel>
